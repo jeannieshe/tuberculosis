@@ -11,7 +11,7 @@ and for model creation and validation, I used Python.
 
 ## Phase 1: Predicting the tuberculosis strain that caused infection
 
-    One of the tricky features of tuberculosis which makes it difficult to eradicate is its rapid
+One of the tricky features of tuberculosis which makes it difficult to eradicate is its rapid
 evolution of resistance to antibiotics. While current TB treatment involves intense rounds of
 all-encompassing antibiotics, in the future, knowing which TB strain infected an individual could
 mean that they are prescribed a strain-specific treatment, which could prove to be simultaneously
@@ -30,7 +30,7 @@ strain-specific effects might manifest more clearly by biomarkers in the bloodst
 
 ## Phase 2: Predicting the tuberculosis disease state
 
-    Another aspect of TB that remains to be known is the characteristics that make one
+Another aspect of TB that remains to be known is the characteristics that make one
 individual experience *latent* TB infection instead of *active* TB infection. For the second phase of
 my project, I explored the legitimacy of developing a predictive model on the severity of a
 human’s disease state from their blood transcriptomic data. The data sourced from Singhania, et
@@ -46,7 +46,7 @@ physiology.
 
 ## Next steps
 
-    I would be remiss not to mention the potential of performing cross-species translation
+I would be remiss not to mention the potential of performing cross-species translation
 using the data from Moreira-Teixeira et al. (2020). It is true that the mouse and human genome
 differ widely, but using a method like TransCompR to map mouse transcriptomic data onto
 human transcriptomic data could help us develop even more accurate pre-clinical models of
