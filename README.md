@@ -19,9 +19,11 @@ more effective on eradicating the disease and be less taxing on the body. With t
 wanted to uncover which set of mouse transcriptomic data, blood or lung, would best predict the
 strain of TB the mouse was infected with: HN878, the clinical isolate, or H37Rv, the laboratory
 strain. 
-    I created PLS-DA models for both datasets. After 10-fold cross validation, the accuracy score for the models were 0.721 and 0.688 respectively, 
+
+I created PLS-DA models for both datasets. After 10-fold cross validation, the accuracy score for the models were 0.721 and 0.688 respectively, 
 for blood and lung datasets.
-    Moreira-Teixeira et al. (2020) infected the experimental mice via an inhalation exposure system, and TB usually manifests in the lungs for
+
+Moreira-Teixeira et al. (2020) infected the experimental mice via an inhalation exposure system, and TB usually manifests in the lungs for
 humans. Therefore, I initially expected the PLS-DA model trained on lung data to be more accurate than
 the model trained on blood data, but the systems biology analysis proved otherwise. This
 contradiction could be explained either by the uniqueness of this specific dataset, or possibly by
@@ -35,11 +37,13 @@ individual experience *latent* TB infection instead of *active* TB infection. Fo
 my project, I explored the legitimacy of developing a predictive model on the severity of a
 human’s disease state from their blood transcriptomic data. The data sourced from Singhania, et
 al. (2018) included data from a sample set in London and another in South Africa.
-    I wished to examine how a PLS-DA model trained on the London data would perform to predict
+
+I wished to examine how a PLS-DA model trained on the London data would perform to predict
 the outcome of the South Africa data. I was curious to see if the differences in geography and
 human diversity would preclude the ability to create a useful predictive model for TB disease
 state. 
-    Upon using the South Africa data as my test
+
+Upon using the South Africa data as my test
 dataset, the model was shown to have 0.745 accuracy. It was surprising to see such a highly accurate model, which may suggest that the TB disease
 state in humans manifests similarly across continents and is not dependent on individual
 physiology.
