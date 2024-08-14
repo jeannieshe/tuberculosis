@@ -5,8 +5,8 @@ For our final project, we were tasked to use the dataset of a recently published
 approaches to extract new, biologically significant hypotheses that the authors had not reached. Since I had not explored any 
 tuberculosis (TB) research before, I chose to read the paper [*Mouse transcriptome reveals potential signatures of protection and pathogenesis in human tuberculosis*](https://doi.org/10.1038/s41590-020-0610-z) by Moreira-Teixeira et al. 
 
-We had recently learned a new set of tools including SVD, PCA, regression (MLR, PCR, PLSR), classification, and single cell sequencing data analysis in the second semester of the class.
-Intrigued by the potential of applying machine learning models to bulk-RNA seq data, I ended up using mainly PCA and PLSR to infer new hypotheses. The following is a brief summary of my work, although for an in-depth writeup and figures, please view the PDF in this repo. For loading the dataset, I used R,
+We had recently learned a new set of tools including SVD, PCA, regression (MLR, PCR, PLSR), classification, and single cell sequencing data analysis (UMAP, t-SNE) in the second semester of the class.
+Intrigued by the potential of applying machine learning models to bulk-RNA seq data, I ended up using mainly PCA, PLSR, k-means cross validation, and supervised/unsupervised clustering to infer new hypotheses. The following is a brief summary of my work, although for an in-depth writeup and figures, please view the PDF in this repo. For loading the dataset, I used R,
 and for model creation and validation, I used Python.
 
 ## Phase 1: Predicting the tuberculosis strain that caused infection
@@ -21,7 +21,7 @@ strain of TB the mouse was infected with: HN878, the clinical isolate, or H37Rv,
 strain. 
 
 I created PLS-DA models for both datasets. After 10-fold cross validation, the accuracy score for the models were 0.721 and 0.688 respectively, 
-for blood and lung datasets.
+for blood and lung datasets. 
 
 Moreira-Teixeira et al. (2020) infected the experimental mice via an inhalation exposure system, and TB usually manifests in the lungs for
 humans. Therefore, I initially expected the PLS-DA model trained on lung data to be more accurate than
@@ -52,7 +52,7 @@ physiology.
 
 I would be remiss not to mention the potential of performing cross-species translation
 using the data from Moreira-Teixeira et al. (2020). It is true that the mouse and human genome
-differ widely, but using a method like TransCompR to map mouse transcriptomic data onto
+differ widely, but using a method like [TransCompR](https://pubmed.ncbi.nlm.nih.gov/32753478/) to map mouse transcriptomic data onto
 human transcriptomic data could help us develop even more accurate pre-clinical models of
 various tuberculosis disease states.
 
@@ -61,7 +61,10 @@ various tuberculosis disease states.
 In the future, I envision that these regression models have the potential to become robust
 and even assist physicians who are busy treating patients. These models could help inform what
 kinds of prescriptive treatment are ideal for any given patient and help give a more accurate
-prognosis to the patient and their family. 
+prognosis to the patient and their family. Tuberculosis continues to be a disease that ravages
+humankind, but with the right tools and creativity, we can confidently be on our way to
+addressing and eradicating it entirely.
+
 
 ## Citations
 
