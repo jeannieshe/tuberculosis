@@ -1,4 +1,4 @@
-# A systems biology analysis of tuberculosis mouse models
+# The predictive power of tuberculosis mouse models (A systems biology analysis)
 
 This was my final project of the class 20.260 Computational Analysis of Biological Data I took at MIT in Spring 2024.
 For our final project, we were tasked to use the dataset of a recently published paper and apply new computational
